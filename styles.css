@@ -1,0 +1,90 @@
+body {
+    font-family: 'Courier';
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido hacia arriba */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    height: 100vh;
+    margin: 0;
+    background-color: #cfe2f3;
+}
+
+#game {
+    width: 60%;
+    margin-top: 0; /* Elimina el margen superior */
+    background-color: #ffffff;
+}
+
+#game #top{ 
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 20%; 
+}
+
+#game h2{
+    margin-top: 0;
+}
+
+#options {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+#options a {
+    flex: 1;
+}
+
+#options a img {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor a */
+    height: 70%; /* Mantiene la proporción de la imagen */
+}
+#result {
+    font-family: 'Courier';
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+#modalImage {
+    width: 300px; /* Ajusta el tamaño según tus preferencias */
+    height: 300px; /* Ajusta el tamaño según tus preferencias */
+}
+.modal-content {
+    width: 400px; /* Ajusta el ancho según tus preferencias */
+    height: 500px; /* Ajusta el alto según tus preferencias */
+    margin: auto; /* Para centrar el modal horizontalmente */
+    margin-top: 50px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+    border: 1px solid #ccc; /* Añade un borde para mejorar la apariencia */
+    padding: 20px; /* Añade un espacio interno para mejorar la apariencia */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Piedra, Papel y Tijeras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <a id="top" href="#"><img src="images/ppthappy.png" alt="El Juego"></a>
+        <h2>Pincha en un objeto:</h2>
+        <div id="options">
+            <a href="#"><img src="images/piedra.png" alt="Piedra" onclick="chooseOption('piedra')">&nbsp;</a>
+            <a href="#"><img src="images/tijera.jpg" alt="Tijeras" onclick="chooseOption('tijeras')">&nbsp;</a>
+            <a href="#"><img src="images/papel.jpg" alt="Papel" onclick="chooseOption('papel')">&nbsp;</a>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Resultado">
+            <p id="modalText"></p>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
