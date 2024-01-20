@@ -3,8 +3,8 @@ body {
     font-weight: bold;
     text-align: center;
     display: flex;
-    align-items: flex-start; /* Alinea el contenido hacia arriba */
-    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: flex-start;
+    justify-content: center;
     height: 100vh;
     margin: 0;
     background-color: #cfe2f3;
@@ -12,7 +12,7 @@ body {
 
 #game {
     width: 60%;
-    margin-top: 0; /* Elimina el margen superior */
+    margin-top: 0;
     background-color: #ffffff;
 }
 
@@ -23,7 +23,7 @@ body {
     height: 20%; 
 }
 
-#game h2{
+#game h2 {
     margin-top: 0;
 }
 
@@ -38,14 +38,16 @@ body {
 }
 
 #options a img {
-    width: 100%; /* Ocupa el 100% del ancho del contenedor a */
-    height: 70%; /* Mantiene la proporción de la imagen */
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
 }
+
 #result {
     font-family: 'Courier';
     font-size: 15px;
     margin-bottom: 15px;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -75,16 +77,20 @@ body {
     color: #000;
     cursor: pointer;
 }
+
 #modalImage {
-    width: 300px; /* Ajusta el tamaño según tus preferencias */
-    height: 300px; /* Ajusta el tamaño según tus preferencias */
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño máximo según tus preferencias */
+    height: auto;
 }
-.modal-content {
-    width: 400px; /* Ajusta el ancho según tus preferencias */
-    height: 500px; /* Ajusta el alto según tus preferencias */
-    margin: auto; /* Para centrar el modal horizontalmente */
-    margin-top: 50px; /* Ajusta la distancia desde la parte superior según tus preferencias */
-    border: 1px solid #ccc; /* Añade un borde para mejorar la apariencia */
-    padding: 20px; /* Añade un espacio interno para mejorar la apariencia */
-    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total */
+
+@media only screen and (max-width: 600px) {
+    /* Estilos adicionales para pantallas más pequeñas (ajusta según sea necesario) */
+    #game {
+        width: 90%;
+    }
+
+    #options {
+        margin-left: 10px;
+    }
 }
